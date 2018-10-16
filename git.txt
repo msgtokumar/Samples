@@ -1,0 +1,39 @@
+cd C:\Users\perum\eclipse-TDD\TestCode
+Initial Commit: Master by default
+==========================================
+git init
+git status
+git add .
+git status
+git commit -m "commit request"
+
+Creating new branch without copy master
+========================================
+git branch
+git checkout -b branch1
+git add .
+git commit -m "commit request1"
+git branch
+
+Merge branch to Master
+=======================
+git diff branch1 master
+git checkout master
+git merge branch1
+git diff branch1 master
+git checkout -b branch1
+
+Create new branch from existing branch:
+========================================
+git branch --list
+git checkout -b branch2 branch1
+git branch --list
+Add updated file:
+==================
+git add .
+git commit -m "branch3 commit"
+git diff branch1 branch2
+
+To get the History:
+=================================
+doskey /history >git.txt
