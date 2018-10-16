@@ -22,7 +22,7 @@ public class ForEachMapEx {
  
     public static void iterateMap(Map<String, String> countryMap) {
  
-        System.out.println("<----------Iterating in normal way------------->");
+        System.out.println("<----------Iterating in normal way111------------->");
         for(Entry<String, String> entry:countryMap.entrySet()) {
             System.out.println("Country: "+entry.getKey()+" : Capital: "+entry.getValue());
         }
@@ -30,7 +30,7 @@ public class ForEachMapEx {
  
     public static void iterateMapUsingForEach(Map<String, String> countryMap) {
  
-        System.out.println("\n<----------Iterating using forEach method------------>");
+        System.out.println("\n<----------Iterating using forEach111 method------------>");
         countryMap.forEach((k,v)->System.out.println("Country: "+k+" : Capital: "+v));
  
         countryMap.forEach((k,v)->{
